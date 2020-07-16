@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Black.ttf">
+            <string>Raleway-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CategoryHeaderView" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7l-pY-wdH">
+                    <rect key="frame" x="0.0" y="0.0" width="389" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-ul-iyX">
+                            <rect key="frame" x="30" y="17" width="329" height="18"/>
+                            <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dTE-ul-iyX" secondAttribute="bottom" constant="10" id="7OD-u4-rbC"/>
+                        <constraint firstItem="dTE-ul-iyX" firstAttribute="leading" secondItem="Y7l-pY-wdH" secondAttribute="leading" constant="30" id="H2C-dF-jlB"/>
+                        <constraint firstAttribute="trailing" secondItem="dTE-ul-iyX" secondAttribute="trailing" constant="30" id="R7k-lT-vOW"/>
+                        <constraint firstAttribute="height" constant="45" id="cJz-vZ-BsF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Y7l-pY-wdH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LQA-6N-z3G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Y7l-pY-wdH" secondAttribute="trailing" id="jmH-fM-Pwf"/>
+                <constraint firstAttribute="bottom" secondItem="Y7l-pY-wdH" secondAttribute="bottom" id="pKr-ff-umz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="categoryName" destination="dTE-ul-iyX" id="5Zh-FI-K2M"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="293.07065217391306"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Black.ttf">
+            <string>Raleway-Black</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="covid_cell" rowHeight="346" id="KGk-i7-Jjw" customClass="CovidContainerTableViewCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="346"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="416" height="346"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzF-M0-94P">
+                        <rect key="frame" x="30" y="45" width="96" height="26"/>
+                        <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="22"/>
+                        <color key="textColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9R8-sk-Ah6">
+                        <rect key="frame" x="301" y="40.5" width="85" height="35"/>
+                        <color key="backgroundColor" red="1" green="0.80392156859999997" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="6GM-W4-Cx2"/>
+                            <constraint firstAttribute="height" constant="35" id="9md-O6-9zI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                        <state key="normal" title="More Info">
+                            <color key="titleColor" red="0.82745098039999998" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onMoreInfo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pGA-Hr-YlC"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UGB-2V-Hf3">
+                        <rect key="frame" x="0.0" y="91" width="416" height="235"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="235" id="WEC-cT-ycV"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fcq-6t-0W6">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWO-O9-bmw">
+                        <rect key="frame" x="0.0" y="0.0" width="416" height="20"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="sft-pP-a8k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rzF-M0-94P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="0JL-Ee-Xhh"/>
+                    <constraint firstItem="UGB-2V-Hf3" firstAttribute="top" secondItem="rzF-M0-94P" secondAttribute="bottom" constant="20" id="SFG-EZ-wHT"/>
+                    <constraint firstAttribute="trailing" secondItem="CWO-O9-bmw" secondAttribute="trailing" id="YjQ-4z-xcF"/>
+                    <constraint firstItem="CWO-O9-bmw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dhb-4A-sww"/>
+                    <constraint firstAttribute="trailing" secondItem="UGB-2V-Hf3" secondAttribute="trailing" id="g7n-57-oAE"/>
+                    <constraint firstItem="UGB-2V-Hf3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i5M-BJ-mcu"/>
+                    <constraint firstItem="CWO-O9-bmw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ntY-Z6-hrf"/>
+                    <constraint firstAttribute="trailing" secondItem="9R8-sk-Ah6" secondAttribute="trailing" constant="30" id="o5c-W5-Ppa"/>
+                    <constraint firstItem="9R8-sk-Ah6" firstAttribute="centerY" secondItem="rzF-M0-94P" secondAttribute="centerY" id="p75-nF-kQW"/>
+                    <constraint firstAttribute="bottom" secondItem="UGB-2V-Hf3" secondAttribute="bottom" constant="20" id="qZg-jC-y7h"/>
+                    <constraint firstItem="rzF-M0-94P" firstAttribute="top" secondItem="CWO-O9-bmw" secondAttribute="bottom" constant="25" id="rgy-eI-m0s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="covidArticlesCollection" destination="UGB-2V-Hf3" id="Jgk-Ry-Mz8"/>
+                <outlet property="moreInfoBtn" destination="9R8-sk-Ah6" id="iNq-8x-WbV"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="245.75892857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

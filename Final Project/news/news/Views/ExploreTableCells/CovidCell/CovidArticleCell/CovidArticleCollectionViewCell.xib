@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="covid_article_cell" id="gTV-IL-0wX" customClass="CovidArticleCollectionViewCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iFw-r6-WAq">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="110" id="DYu-K0-N7G"/>
+                            <constraint firstAttribute="height" constant="110" id="dgR-jK-Iij"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJV-mG-48q">
+                        <rect key="frame" x="125" y="38" width="211" height="62"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                        <color key="textColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxE-VT-CvB">
+                        <rect key="frame" x="125" y="10" width="211" height="18"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iFw-r6-WAq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="31p-jI-cO6"/>
+                <constraint firstItem="dJV-mG-48q" firstAttribute="bottom" secondItem="iFw-r6-WAq" secondAttribute="bottom" constant="-10" id="43n-Sg-UYN"/>
+                <constraint firstAttribute="trailing" secondItem="dJV-mG-48q" secondAttribute="trailing" constant="15" id="65Z-XL-mxA"/>
+                <constraint firstItem="dJV-mG-48q" firstAttribute="leading" secondItem="iFw-r6-WAq" secondAttribute="trailing" constant="15" id="DPJ-cS-rOv"/>
+                <constraint firstItem="dJV-mG-48q" firstAttribute="top" secondItem="nxE-VT-CvB" secondAttribute="bottom" constant="10" id="HaC-7c-RV2"/>
+                <constraint firstItem="iFw-r6-WAq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ID1-aE-ndA"/>
+                <constraint firstItem="nxE-VT-CvB" firstAttribute="top" secondItem="iFw-r6-WAq" secondAttribute="top" constant="10" id="Mvd-o7-B4b"/>
+                <constraint firstAttribute="trailing" secondItem="nxE-VT-CvB" secondAttribute="trailing" constant="15" id="Wyz-g6-nZw"/>
+                <constraint firstAttribute="bottom" secondItem="iFw-r6-WAq" secondAttribute="bottom" id="a4m-gh-HZb"/>
+                <constraint firstItem="nxE-VT-CvB" firstAttribute="leading" secondItem="iFw-r6-WAq" secondAttribute="trailing" constant="15" id="uAP-FQ-eep"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="351" height="150"/>
+            <connections>
+                <outlet property="articlePhoto" destination="iFw-r6-WAq" id="8Bj-Xh-Jov"/>
+                <outlet property="articleSource" destination="nxE-VT-CvB" id="Ebi-dP-LfC"/>
+                <outlet property="articleTitle" destination="dJV-mG-48q" id="k9u-kC-3Y6"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="178.125"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,28 @@
+PODS:
+  - PureLayout (3.0.2)
+  - Shimmer (1.0.2)
+  - ShimmerBlocks (0.1.1):
+    - PureLayout (~> 3.0.2)
+    - Shimmer (~> 1.0.2)
+  - VerticalCardSwiper (2.2.0)
+
+DEPENDENCIES:
+  - ShimmerBlocks
+  - VerticalCardSwiper
+
+SPEC REPOS:
+  trunk:
+    - PureLayout
+    - Shimmer
+    - ShimmerBlocks
+    - VerticalCardSwiper
+
+SPEC CHECKSUMS:
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  ShimmerBlocks: fe8fba0be754fae85be8cab8e934050112e1f601
+  VerticalCardSwiper: 41c8c0d8d87511ec269347f5671386acf66cd31a
+
+PODFILE CHECKSUM: 69a3b5c6c4fcc3ec9feb63920753c6f43d1080a0
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="top_news_cell" id="gTV-IL-0wX" customClass="TopNewsCollectionViewCell" customModule="news" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="269" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="269" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mMa-Zo-mhf">
+                        <rect key="frame" x="0.0" y="0.0" width="269" height="166.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdf-1I-U40">
+                        <rect key="frame" x="5" y="176.5" width="259" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                        <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azI-FU-tsg">
+                        <rect key="frame" x="5" y="212" width="50.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23min ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1G-oK-rIv">
+                        <rect key="frame" x="191" y="212" width="73" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="azI-FU-tsg" firstAttribute="leading" secondItem="gdf-1I-U40" secondAttribute="leading" id="7qd-4k-BgY"/>
+                <constraint firstItem="gdf-1I-U40" firstAttribute="top" secondItem="mMa-Zo-mhf" secondAttribute="bottom" constant="10" id="Gxh-bL-Tve"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="K1G-oK-rIv" secondAttribute="bottom" constant="10" id="S0M-nr-1mD"/>
+                <constraint firstItem="gdf-1I-U40" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="abX-JS-XHQ"/>
+                <constraint firstAttribute="trailing" secondItem="K1G-oK-rIv" secondAttribute="trailing" constant="5" id="fb4-up-34D"/>
+                <constraint firstItem="mMa-Zo-mhf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gJp-ZM-xWg"/>
+                <constraint firstAttribute="trailing" secondItem="mMa-Zo-mhf" secondAttribute="trailing" id="gqe-x4-iWF"/>
+                <constraint firstItem="azI-FU-tsg" firstAttribute="top" secondItem="gdf-1I-U40" secondAttribute="bottom" constant="12" id="jIa-Jj-f95"/>
+                <constraint firstAttribute="trailing" secondItem="gdf-1I-U40" secondAttribute="trailing" constant="5" id="lul-6e-ufA"/>
+                <constraint firstAttribute="bottom" secondItem="azI-FU-tsg" secondAttribute="bottom" constant="10" id="oIu-As-vjy"/>
+                <constraint firstItem="mMa-Zo-mhf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wwH-Yz-Qha"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="269" height="240"/>
+            <connections>
+                <outlet property="articleDate" destination="K1G-oK-rIv" id="y7M-q6-ZIE"/>
+                <outlet property="articlePhoto" destination="mMa-Zo-mhf" id="k1M-x1-CFo"/>
+                <outlet property="articleSource" destination="azI-FU-tsg" id="FF3-HC-34g"/>
+                <outlet property="articleTitle" destination="gdf-1I-U40" id="9lq-Sb-1gy"/>
+            </connections>
+            <point key="canvasLocation" x="163" y="176"/>
+        </collectionViewCell>
+    </objects>
+</document>
